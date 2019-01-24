@@ -4,7 +4,7 @@ import { Jumbotron, Button } from 'react-bootstrap';
 class JumboTron extends Component {
     render() {
         return (
-            <Jumbotron style={{ textAlign: 'center', height: '95vh' }}>
+            <Jumbotron className='hero' style={{ textAlign: 'center', height: '95vh', backgroundImage: 'url("https://i.imgur.com/LEyyfSi.jpg")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
                 <h1 style={{ marginTop: '25vh' }}>Avocado</h1>
                 <p>
                     Experience the creaminess
