@@ -7,7 +7,7 @@ import JumboTron from './Components/JumboTron';
 import InbetweenText from './Components/InbetweenText';
 import ImageCarousel from './Components/ImageCarousel';
 import Button from './Components/Button';
-import TextArea from './Components/Text';
+import TextArea from './Components/TextArea';
 
 class App extends Component {
   render() {

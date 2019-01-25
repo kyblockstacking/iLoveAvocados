@@ -16,7 +16,7 @@ class Button extends Component {
             <div
                 onMouseEnter={() => { this.setState({ backgroundColor: 'green' }) }}
                 onMouseLeave={() => { this.setState({ backgroundColor: 'white' }) }}
-                style={{ display: 'block', margin: '0 auto', textAlign: 'center', background: this.state.backgroundColor, border: '2px solid teal', padding: '10px', marginRight: '45vw', marginLeft: '45vw' }}>
+                style={{ fontFamily: 'Archivo', display: 'block', margin: '0 auto', textAlign: 'center', background: this.state.backgroundColor, border: '2px solid teal', padding: '5px', marginRight: '45vw', marginLeft: '45vw' }}>
                 {this.props.children}
             </div>
         );

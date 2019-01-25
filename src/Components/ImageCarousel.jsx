@@ -17,35 +17,35 @@ class ImageCarousel extends Component {
             <Carousel controls={false} pauseOnHover={false} slide={true} interval={2500} style={{ height: '100vh' }} >
 
                 <Carousel.Item>
-                    <img style={{ width: '100%', height: '100vh' }} alt="900x500" src={avocado1} />
+                    <img style={{ width: '100vw', height: '100vh' }} alt="900x500" src={avocado1} />
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img style={{ width: '100%', height: '100vh' }} alt="900x500" src={avocado2} />
+                    <img style={{ width: '100vw', height: '100vh' }} alt="900x500" src={avocado2} />
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img style={{ width: '100%', height: '100vh' }} alt="900x500" src={avocado3} />
+                    <img style={{ width: '100vw', height: '100vh' }} alt="900x500" src={avocado3} />
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img style={{ width: '100%', height: '100vh' }} alt="900x500" src={avocado4} />
+                    <img style={{ width: '100vw', height: '100vh' }} alt="900x500" src={avocado4} />
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img style={{ width: '100%', height: '100vh' }} alt="900x500" src={avocado5} />
+                    <img style={{ width: '100vw', height: '100vh' }} alt="900x500" src={avocado5} />
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img style={{ width: '100%', height: '100vh' }} alt="900x500" src={avocado6} />
+                    <img style={{ width: '100vw', height: '100vh' }} alt="900x500" src={avocado6} />
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img style={{ width: '100%', height: '100vh' }} alt="900x500" src={avocado7} />
+                    <img style={{ width: '100vw', height: '100vh' }} alt="900x500" src={avocado7} />
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img style={{ width: '100%', height: '100vh' }} alt="900x500" src={avocado8} />
+                    <img style={{ width: '100vw', height: '100vh' }} alt="900x500" src={avocado8} />
                 </Carousel.Item>
             </Carousel>
         );
