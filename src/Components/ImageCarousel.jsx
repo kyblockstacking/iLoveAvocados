@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
 
-//Images
+// images
 import avocado1 from '../avocado_images/avo1.jpg';
 import avocado2 from '../avocado_images/avo2.jpg';
 import avocado3 from '../avocado_images/avo3.jpg';
@@ -14,7 +14,7 @@ import avocado8 from '../avocado_images/avo8.jpg';
 class ImageCarousel extends Component {
     render() {
         return (
-            <Carousel controls={false} pauseOnHover={false} slide={true} interval={2500} style={{ height: '100vh' }} >
+            <Carousel className='carousel' controls={false} pauseOnHover={false} slide={true} interval={2500}>
 
                 <Carousel.Item>
                     <img style={{ width: '100vw', height: '100vh' }} alt="900x500" src={avocado1} />

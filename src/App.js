@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+// css
 import './App.css';
 
 // components
@@ -8,6 +10,7 @@ import InbetweenText from './Components/InbetweenText';
 import ImageCarousel from './Components/ImageCarousel';
 import Button from './Components/Button';
 import TextArea from './Components/TextArea';
+import CreateImage from './Components/CreateImage';
 
 class App extends Component {
   render() {
@@ -15,7 +18,7 @@ class App extends Component {
       <div>
         <NavBar />
         <JumboTron />
-        <InbetweenText>DISCOVER THE POSSIBILITIES</InbetweenText>
+        <InbetweenText>EXPLORE THE POSSIBILITIES</InbetweenText>
         <TextArea>
           "The avocado serves as a culinary chameleon — something that can go with a variety of dishes while disguised in many different ways. And including avocados as a main ingredient in sauces gives chefs the ability to customize a number of dishes with varying flavor profiles." <br />
           <a href='https://avocadosfrommexico.com/foodservice/ask-foodservice/the-possibilities-are-endless-with-sauceabilities-2-0/' target='_blank' rel="noopener noreferrer">
@@ -23,8 +26,15 @@ class App extends Component {
           </a>
         </TextArea>
         <ImageCarousel />
-        <InbetweenText>EXPLORE THE FLAVORS</InbetweenText>
-        <Button>Menu</Button>
+        <InbetweenText>DISCOVER THE FLAVORS</InbetweenText>
+        <Button>Recipes</Button>
+        <CreateImage />
+        <InbetweenText>
+          LEARN THEIR ORIGIN
+        </InbetweenText>
+        <Button>
+          Origin
+        </Button>
       </div>
     );
   }

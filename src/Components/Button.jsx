@@ -13,12 +13,12 @@ class Button extends Component {
 
     render() {
         return (
-            <div
-                onMouseEnter={() => { this.setState({ backgroundColor: 'green' }) }}
+            <button
+                onMouseEnter={() => { this.setState({ backgroundColor: '#4c6e66' }) }}
                 onMouseLeave={() => { this.setState({ backgroundColor: 'white' }) }}
-                style={{ fontFamily: 'Archivo', display: 'block', margin: '0 auto', textAlign: 'center', background: this.state.backgroundColor, border: '2px solid teal', padding: '5px', marginRight: '45vw', marginLeft: '45vw' }}>
+                style={{ fontFamily: 'Archivo', display: 'block', margin: '0 auto', textAlign: 'center', background: this.state.backgroundColor, border: '2px solid #568203', padding: '1em', marginBottom: '2vh', borderRadius: '5px' }}>
                 {this.props.children}
-            </div>
+            </button>
         );
     };
 };

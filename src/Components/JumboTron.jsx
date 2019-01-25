@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 
 class JumboTron extends Component {
     render() {
@@ -10,9 +10,6 @@ class JumboTron extends Component {
                 </h1>
                 <p style={{ fontFamily: 'Archivo', color: '#568203', webkitTextStroke: '1px', webkitTextStrokeColor: '#424242', fontSize: '2em' }}>
                     EXPERIENCE THE BEST OF CALIFORNIA
-                </p>
-                <p>
-                    <Button bsStyle="primary">Reservations</Button>
                 </p>
             </Jumbotron>
         );
