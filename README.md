@@ -1,4 +1,4 @@
-<h1> Avocado Restaurant</h1>
+<h1>I Love Avocados</h1>
 
 - learning react-bootstrap
 - making a mock restaurant web page
