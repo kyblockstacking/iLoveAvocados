@@ -14,7 +14,7 @@ import avocado8 from '../avocado_images/avo8.jpg';
 class ImageCarousel extends Component {
     render() {
         return (
-            <Carousel pauseOnHover={false} slide={true} interval={2500} style={{ height: '100vh' }} >
+            <Carousel controls={false} pauseOnHover={false} slide={true} interval={2500} style={{ height: '100vh' }} >
 
                 <Carousel.Item>
                     <img style={{ width: '100%', height: '100vh' }} alt="900x500" src={avocado1} />
