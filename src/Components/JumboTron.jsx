@@ -8,7 +8,7 @@ class JumboTron extends Component {
                 <h1 style={{ paddingTop: '25vh' }}>Avocado</h1>
                 <p style={{ color: 'teal' }}>EXPERIENCE THE BEST OF CALIFORNIA</p>
                 <p>
-                    <Button bsStyle="primary">Avocado</Button>
+                    <Button bsStyle="primary">Reservations</Button>
                 </p>
             </Jumbotron>
         );

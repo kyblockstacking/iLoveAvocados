@@ -5,6 +5,7 @@ import './App.css';
 import NavBar from './Components/NavBar';
 import JumboTron from './Components/JumboTron';
 import InbetweenText from './Components/InbetweenText';
+import ImageCarousel from './Components/ImageCarousel';
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
       <div>
         <NavBar />
         <JumboTron />
-        <InbetweenText>DISCOVER THE CREAMINESS</InbetweenText>
+        <InbetweenText>DISCOVER THE POSSIBILITIES</InbetweenText>
+        <ImageCarousel />
       </div>
     );
   }
