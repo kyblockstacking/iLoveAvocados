@@ -5,7 +5,7 @@ class NavBar extends Component {
 
     render() {
         return (
-            <Navbar fixedTop style={{ margin: '0' }}>
+            <Navbar fixedTop text-center style={{ margin: '0' }}>
                 <Navbar.Header style={{ marginLeft: '25vw' }}>
                     <Navbar.Brand>
                         <a href="#brand">Avocado.California</a>
