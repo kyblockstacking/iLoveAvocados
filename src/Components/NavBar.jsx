@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, Glyphicon } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
+
+import MenuModal from './MenuModal';
 
 class NavBar extends Component {
 
@@ -8,12 +10,11 @@ class NavBar extends Component {
             <Navbar fixedTop text-center style={{ margin: '0' }}>
                 <Navbar.Header style={{ marginLeft: '25vw' }}>
                     <Navbar.Brand>
-                        <a href="#brand">Avocado.California</a>
-                        &nbsp;
-                        <Glyphicon glyph="align-left" />
+                        <div style={{ fontFamily: 'Roboto' }}>Avocado.California&nbsp;<MenuModal /></div>
                     </Navbar.Brand>
                 </Navbar.Header >
             </Navbar>
+
         );
     };
 };
