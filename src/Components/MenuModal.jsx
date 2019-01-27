@@ -28,13 +28,15 @@ class MenuModal extends Component {
 
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title style={{ textAlign: 'center' }}>Avocado Menu</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
+                    <Modal.Body style={{ textAlign: 'center' }}>
+                        <a href='/aboutme'>About Me</a>
+                        <br />
+                        <a href='/recipes'>Recipes</a>
+                        <br />
+                        <a href='origin'>Origin</a>
                     </Modal.Body>
-                    <Modal.Footer>
-                        <Button onClick={this.handleClose}>Close</Button>
-                    </Modal.Footer>
                 </Modal>
             </span>
         );

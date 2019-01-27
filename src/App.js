@@ -11,6 +11,7 @@ import ImageCarousel from './Components/ImageCarousel';
 import Button from './Components/Button';
 import TextArea from './Components/TextArea';
 import CreateImage from './Components/CreateImage';
+import FlavorImages from './Components/FlavorImages';
 
 class App extends Component {
   render() {
@@ -28,10 +29,11 @@ class App extends Component {
         <ImageCarousel />
         <InbetweenText>DISCOVER THE FLAVORS</InbetweenText>
         <Button>Recipes</Button>
-        <CreateImage />
+        <FlavorImages />
         <InbetweenText>
           LEARN THEIR ORIGIN
         </InbetweenText>
+        <CreateImage circle='true' thumbnail='true' style={{ display: 'block', margin: '0 auto' }} src={require('./avocado_images/avocado_plant.jpg')} />
         <Button>
           Origin
         </Button>
