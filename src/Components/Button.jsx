@@ -9,16 +9,15 @@ class Button extends Component {
         };
     };
 
-
-
     render() {
         return (
-            <button
+            <a
+                href={this.props.href}
                 onMouseEnter={() => { this.setState({ backgroundColor: '#4c6e66' }) }}
                 onMouseLeave={() => { this.setState({ backgroundColor: 'white' }) }}
-                style={{ fontFamily: 'Archivo', display: 'block', margin: '0 auto', textAlign: 'center', background: this.state.backgroundColor, border: '2px solid #568203', padding: '1em', marginBottom: '2vh', borderRadius: '5px' }}>
+                style={{ fontFamily: 'Archivo', display: 'block', margin: '0 auto', textAlign: 'center', background: this.state.backgroundColor, border: '2px solid #568203', padding: '0.5em', marginBottom: '2vh', borderRadius: '5px', width: '200px' }}>
                 {this.props.children}
-            </button>
+            </a>
         );
     };
 };
