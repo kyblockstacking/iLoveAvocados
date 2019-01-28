@@ -1,10 +1,11 @@
+//react
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-// css
+//css
 import './App.css';
 
-// components
+//components
 import NavBar from './Components/NavBar';
 import JumboTron from './Components/JumboTron';
 import InbetweenText from './Components/InbetweenText';
@@ -18,6 +19,7 @@ import Origin from './Components/Origin';
 class App extends Component {
   render() {
     return (
+
       <Router>
 
         <div className='AppWrapper'>
@@ -53,17 +55,18 @@ class App extends Component {
             />//closes TextArea
             }//closes Render
           />{/* closes Route */}
-          <Route exact path='/' render={(props) => <Button {...props} href='/recipes' children={<span>RECIPES</span>} />} />
+          <Route exact path='/' render={(props) => <Button {...props} href='/recipes' children={<span>RECIPES</span>} tooltip={<span>Click me to see some avocado recipes!</span>} />} />
           <Route exact path='/' component={FlavorImages} />
           <Route exact path='/' render={(props) => <InbetweenText {...props} children={<span>LEARN THEIR ORIGIN</span>} />} />
-          <Route exact path='/' render={(props) => <Button {...props} href='/origin' children={<span>ORIGIN</span>} />} />
+          <Route exact path='/' render={(props) => <Button {...props} href='/origin' children={<span>ORIGIN</span>} tooltip={<span>Click me learn about the origin of the avocado!</span>} />} />
           <Route exact path='/' render={(props) => <CreateImage {...props} circle={true} thumbnail={true} src={require('./avocado_images/avocado_plant.jpg')} style={{ display: 'block', margin: '0 auto' }} />} />
 
         </div>
 
       </Router >
-    );
-  };
-};
+
+    );//close return
+  };//close render
+};//close class
 
 export default App;
