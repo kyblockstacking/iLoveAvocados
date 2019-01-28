@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import CreateImage from './CreateImage';
+import CreateImage from './Reuseables/CreateImage';
 
 class FlavorImages extends Component {
 
