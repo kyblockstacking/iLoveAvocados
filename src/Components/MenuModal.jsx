@@ -31,11 +31,13 @@ class MenuModal extends Component {
                         <Modal.Title style={{ textAlign: 'center' }}>Avocado Menu</Modal.Title>
                     </Modal.Header>
                     <Modal.Body style={{ textAlign: 'center' }}>
-                        <a href='/aboutme'>About Me</a>
+                        <a style={{ textDecoration: 'none' }} href='/'>Home</a>
                         <br />
-                        <a href='/recipes'>Recipes</a>
+                        <a style={{ textDecoration: 'none' }} href='/aboutme'>About Me</a>
                         <br />
-                        <a href='origin'>Origin</a>
+                        <a style={{ textDecoration: 'none' }} href='/recipes'>Recipes</a>
+                        <br />
+                        <a style={{ textDecoration: 'none' }} href='origin'>Origin</a>
                     </Modal.Body>
                 </Modal>
             </span>
