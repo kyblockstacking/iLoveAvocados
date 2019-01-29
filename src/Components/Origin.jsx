@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class Origin extends Component {
     render() {
         return (
-            <div className='origin'>
+            <div className='origin' style={{ fontFamily: 'Poppins' }}>
                 <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Persea americana, or the avocado, possibly originated in the Tehuacan Valley in the state of Puebla, Mexico, although fossil evidence suggests similar species were much more widespread millions of years ago. However, there is evidence for three possible separate domestications of the avocado, resulting in the currently recognized Mexican (aoacatl), Guatemalan (quilaoacatl), and West Indian (tlacacolaocatl) landraces. The Mexican and Guatemalan landraces originated in the highlands of those countries, while the West Indian landrace is a lowland variety that ranges from Guatemala, Costa Rica, Colombia, Ecuador to Peru, achieving a wide range through human agency before the arrival of the Europeans. The three separate landraces were most likely to have already intermingled in pre-Columbian America and were described in the Florentine Codex.
                 </p>

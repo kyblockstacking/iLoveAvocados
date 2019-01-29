@@ -10,7 +10,7 @@ class NavBar extends Component {
             <Navbar fixedTop text-center style={{ margin: '0' }}>
                 <Navbar.Header style={{ marginLeft: '25vw' }}>
                     <Navbar.Brand>
-                        <div style={{ fontFamily: 'Roboto' }}>Avocado.California&nbsp;<MenuModal /></div>
+                        <div style={{ fontFamily: 'Poppins' }}>Avocado.California&nbsp;<MenuModal /></div>
                     </Navbar.Brand>
                 </Navbar.Header >
             </Navbar>
