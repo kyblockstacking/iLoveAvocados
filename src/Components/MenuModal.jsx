@@ -24,7 +24,7 @@ class MenuModal extends Component {
     render() {
         return (
             <span>
-                <i onClick={this.handleShow} className="fas fa-list"></i>
+                <i onClick={this.handleShow} className="fas fa-list" style={{ cursor: 'help' }} />
 
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
