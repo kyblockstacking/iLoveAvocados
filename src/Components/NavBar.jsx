@@ -7,11 +7,11 @@ class NavBar extends Component {
 
     render() {
         return (
-            <Navbar fixedTop text-center style={{ margin: '0' }}>
+            <Navbar fixedTop text-center>
                 <Navbar.Header style={{ marginLeft: '25vw' }}>
                     <Navbar.Brand>
                         <div href='/' style={{ fontFamily: 'Poppins' }}>
-                            <a href='/' style={{ color: 'pink', textDecoration: 'none' }}>
+                            <a href='/' style={{ color: 'olive', textDecoration: 'none', margin: '0' }}>
                                 Avocado.California
                             </a>
                             &nbsp;

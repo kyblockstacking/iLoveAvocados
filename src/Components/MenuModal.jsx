@@ -24,11 +24,11 @@ class MenuModal extends Component {
     render() {
         return (
             <span>
-                <i onClick={this.handleShow} className="fas fa-list" style={{ cursor: 'help' }} />
+                <i onClick={this.handleShow} className="fas fa-list" style={{ cursor: 'help', color: '#618acc' }} />
 
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title style={{ textAlign: 'center' }}>Avocado Menu</Modal.Title>
+                        <Modal.Title>Avocado Menu</Modal.Title>
                     </Modal.Header>
                     <Modal.Body style={{ textAlign: 'center' }}>
                         <a style={{ textDecoration: 'none' }} href='/'>Home</a>
