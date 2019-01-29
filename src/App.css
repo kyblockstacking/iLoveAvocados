@@ -2,42 +2,42 @@
 
 @media (max-width: 480px) {
     .origin {
-        padding: 20% 10% 10% 10%;
+        padding: 20% 10% 5% 10%;
     }
 }
 
 @media (min-width:320px) {
     .origin {
-        padding: 22% 12% 12% 12%;
+        padding: 22% 12% 5% 12%;
     }
 }
 
 @media (min-width:480px) {
     .origin {
-        padding: 24% 14% 14% 14%;
+        padding: 24% 14% 5% 14%;
     }
 }
 
 @media (min-width:600px) {
     .origin {
-        padding: 22% 12% 12% 12%;
+        padding: 22% 12% 5% 12%;
     }
 }
 
 @media (min-width:801px) {
     .origin {
-        padding: 20% 10% 10% 10%;
+        padding: 20% 10% 5% 10%;
     }
 }
 
 @media (min-width:1025px) {
     .origin {
-        padding: 18% 16% 16% 16%;
+        padding: 18% 16% 5% 16%;
     }
 }
 
 @media (min-width:1281px) {
     .origin {
-        padding: 14% 16% 16% 20%;
+        padding: 14% 20% 5% 20%;
     }
 }
