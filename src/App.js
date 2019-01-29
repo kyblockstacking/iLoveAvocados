@@ -8,11 +8,11 @@ import './App.css';
 //components
 import NavBar from './Components/NavBar';
 import JumboTron from './Components/JumboTron';
-import InbetweenText from './Components/Reuseables/InbetweenText';
+import InbetweenText from './Components/InbetweenText';
 import ImageCarousel from './Components/ImageCarousel';
-import Button from './Components/Reuseables/Button';
-import TextArea from './Components/Reuseables/TextArea';
-import CreateImage from './Components/Reuseables/CreateImage';
+import Button from './Components/Button';
+import TextArea from './Components/TextArea';
+import CreateImage from './Components/CreateImage';
 import FlavorImages from './Components/FlavorImages';
 import Origin from './Components/Origin';
 
