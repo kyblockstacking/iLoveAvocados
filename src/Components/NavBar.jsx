@@ -4,11 +4,10 @@ import { Navbar } from 'react-bootstrap';
 import MenuModal from './MenuModal';
 
 class NavBar extends Component {
-
     render() {
         return (
             <Navbar fixedTop text-center>
-                <Navbar.Header style={{ marginLeft: '25vw' }}>
+                <Navbar.Header style={{ marginLeft: '24vw' }}>
                     <Navbar.Brand>
                         <div href='/' style={{ fontFamily: 'Poppins' }}>
                             <a href='/' style={{ color: 'olive', textDecoration: 'none', margin: '0' }}>
