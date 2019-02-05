@@ -41,13 +41,13 @@ class MenuModal extends Component {
                         <Modal.Title className='modalTitle'>Avocado Menu</Modal.Title>
                     </Modal.Header>
                     <Modal.Body className='modalBody' style={styles.modalBody}>
-                        <a style={styles.modalLinks} href='/'>Home</a>
+                        <a className='modalLinkHome' style={styles.modalLinks} href='/'>Home</a>
                         <br />
-                        <a style={styles.modalLinks} href='/aboutme'>About Me</a>
+                        <a className='modalLinkAboutMe' style={styles.modalLinks} href='/aboutme'>About Me</a>
                         <br />
-                        <a style={styles.modalLinks} href='/recipes'>Recipes</a>
+                        <a className='modalLinkRecipes' style={styles.modalLinks} href='/recipes'>Recipes</a>
                         <br />
-                        <a style={styles.modalLinks} href='origin'>Origin</a>
+                        <a className='modalLinkOrigin' style={styles.modalLinks} href='origin'>Origin</a>
                     </Modal.Body>
                 </Modal>
             </span>
