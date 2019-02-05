@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+//components
 import Tooltip from './Tooltip';
 
 class Button extends Component {
