@@ -11,7 +11,11 @@ const LinkWithTooltip = ({ id, children, tooltip }) => {
             delayHide={150}
             placement='right'
         >
-            <span className='tooltipText'>{children}</span>
+            <span
+                className='tooltipText'
+            >
+                {children}
+            </span>
         </OverlayTrigger>
     );
 

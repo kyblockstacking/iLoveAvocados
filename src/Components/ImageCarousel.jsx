@@ -23,38 +23,71 @@ const ImageCarousel = () => {
         <Carousel className='carousel' controls={false} pauseOnHover={false} slide={true} interval={2500}>
 
             <Carousel.Item>
-                <Image responsive style={styles.image} alt="avocado picture" src={avocado1} />
+                <Image
+                    responsive style={styles.image}
+                    alt="avocado picture"
+                    src={avocado1}
+                />
             </Carousel.Item >
 
             <Carousel.Item>
-                <Image responsive style={styles.image} alt="avocado picture" src={avocado2} />
+                <Image
+                    responsive style={styles.image}
+                    alt="avocado picture"
+                    src={avocado2}
+                />
             </Carousel.Item >
 
             <Carousel.Item>
-                <Image responsive style={styles.image} alt="avocado picture" src={avocado3} />
+                <Image
+                    responsive style={styles.image}
+                    alt="avocado picture"
+                    src={avocado3}
+                />
             </Carousel.Item >
 
             <Carousel.Item>
-                <Image responsive style={styles.image} alt="avocado picture" src={avocado4} />
+                <Image
+                    responsive style={styles.image}
+                    alt="avocado picture"
+                    src={avocado4}
+                />
             </Carousel.Item >
 
             <Carousel.Item>
-                <Image responsive style={styles.image} alt="avocado picture" src={avocado5} />
+                <Image
+                    responsive style={styles.image}
+                    alt="avocado picture"
+                    src={avocado5}
+                />
             </Carousel.Item >
 
             <Carousel.Item>
-                <Image responsive style={styles.image} alt="avocado picture" src={avocado6} />
+                <Image
+                    responsive style={styles.image}
+                    alt="avocado picture"
+                    src={avocado6}
+                />
             </Carousel.Item >
 
             <Carousel.Item>
-                <Image responsive style={styles.image} alt="avocado picture" src={avocado7} />
+                <Image
+                    responsive style={styles.image}
+                    alt="avocado picture"
+                    src={avocado7}
+                />
             </Carousel.Item >
 
             <Carousel.Item>
-                <Image responsive style={styles.image} alt="avocado picture" src={avocado8} />
+                <Image
+                    responsive style={styles.image}
+                    alt="avocado picture"
+                    src={avocado8}
+                />
             </Carousel.Item >
         </Carousel>
     );
+    
 };
 
 export default ImageCarousel;

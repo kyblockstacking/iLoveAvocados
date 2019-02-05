@@ -15,7 +15,10 @@ const TextArea = (props) => {
     };
 
     return (
-        <div className='textArea' style={styles.textArea}>
+        <div
+            className='textArea'
+            style={styles.textArea}
+        >
             {children}
         </div >
     );

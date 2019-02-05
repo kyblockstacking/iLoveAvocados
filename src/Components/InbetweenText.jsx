@@ -17,10 +17,14 @@ const InbetweenText = (props) => {
     };
 
     return (
-        <div className='inbetweenText' style={styles.inbetweenText}>
+        <div
+            className='inbetweenText'
+            style={styles.inbetweenText}
+        >
             {children}
         </div>
     );
+
 };
 
 export default InbetweenText;

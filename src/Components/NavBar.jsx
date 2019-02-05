@@ -23,9 +23,19 @@ const NavBar = () => {
     };
 
     return (
-        <Navbar className='navbar' fixedTop>
-            <Navbar.Header className='navbarHeader' style={styles.navbarHeader}>
-                <a className='navbarBrand' href='/' style={styles.navbarBrand}>
+        <Navbar
+            className='navbar'
+            fixedTop
+        >
+            <Navbar.Header
+                className='navbarHeader'
+                style={styles.navbarHeader}
+            >
+                <a
+                    className='navbarBrand'
+                    href='/'
+                    style={styles.navbarBrand}
+                >
                     Avocado.California
                 </a>
                 &nbsp;

@@ -30,15 +30,28 @@ const JumboTron = () => {
     };
 
     return (
-        <Jumbotron className='jumboTron' style={styles.jumboTron}>
-            <h1 className='brandName' style={styles.brandName}>
+        <Jumbotron
+            className='jumboTron'
+            style={styles.jumboTron}
+        >
+
+            <h1
+                className='brandName'
+                style={styles.brandName}
+            >
                 Avocado
             </h1>
-            <p className='sloan' style={styles.slogan}>
+
+            <p
+                className='sloan'
+                style={styles.slogan}
+            >
                 EXPERIENCE THE BEST OF CALIFORNIA
             </p>
+
         </Jumbotron >
     );
+
 };
 
 export default JumboTron;
