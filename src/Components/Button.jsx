@@ -33,11 +33,12 @@ class Button extends Component {
 
         return (
             <a
+                className='button'
                 href={href}
                 onMouseEnter={() => { this.setState({ backgroundColor: '#4c6e66' }) }}
                 onMouseLeave={() => { this.setState({ backgroundColor: 'white' }) }}
                 style={styles.button}>
-                <Tooltip tooltip={tooltip}>
+                <Tooltip className='tooltip' tooltip={tooltip}>
                     {children}
                 </Tooltip>
             </a>
