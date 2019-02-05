@@ -6,17 +6,15 @@ import MenuModal from './MenuModal';
 
 const NavBar = () => {
     return (
-        <Navbar fixedTop text-center>
-            <Navbar.Header style={{ marginLeft: '24vw' }}>
-                <Navbar.Brand>
-                    <div href='/' style={{ fontFamily: 'Poppins' }}>
-                        <a href='/' style={{ color: 'olive', textDecoration: 'none', margin: '0' }}>
-                            Avocado.California
+        <Navbar fixedTop>
+            <Navbar.Header style={{ display: 'inline-block', textAlign: 'center', width: '100%', paddingTop: '10px' }}>
+                <div href='/' style={{ fontFamily: 'Poppins' }}>
+                    <a href='/' style={{ color: 'olive', textDecoration: 'none', margin: '0', fontSize: '1.5em' }}>
+                        Avocado.California
                             </a>
-                        &nbsp;
+                    &nbsp;
                         <MenuModal />
-                    </div>
-                </Navbar.Brand>
+                </div>
             </Navbar.Header >
         </Navbar>
 
