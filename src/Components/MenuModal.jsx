@@ -22,22 +22,32 @@ class MenuModal extends Component {
     };
 
     render() {
+
+        const styles = {
+            modalBody: {
+                textAlign: 'center'
+            },
+            modalLinks: {
+                textDecoration: 'none'
+            }
+        };
+
         return (
             <span>
-                <i onClick={this.handleShow} className="fas fa-list" style={{ cursor: 'help', color: '#618acc' }} />
+                <i className='modalOpen' onClick={this.handleShow} className="fas fa-list" style={{ cursor: 'help', color: '#618acc' }} />
 
-                <Modal show={this.state.show} onHide={this.handleClose}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Avocado Menu</Modal.Title>
+                <Modal className='modal' show={this.state.show} onHide={this.handleClose}>
+                    <Modal.Header className='modalHeader' closeButton>
+                        <Modal.Title className='modalTitle'>Avocado Menu</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body style={{ textAlign: 'center' }}>
-                        <a style={{ textDecoration: 'none' }} href='/'>Home</a>
+                    <Modal.Body className='modalBody' style={styles.modalBody}>
+                        <a style={styles.modalLinks} href='/'>Home</a>
                         <br />
-                        <a style={{ textDecoration: 'none' }} href='/aboutme'>About Me</a>
+                        <a style={styles.modalLinks} href='/aboutme'>About Me</a>
                         <br />
-                        <a style={{ textDecoration: 'none' }} href='/recipes'>Recipes</a>
+                        <a style={styles.modalLinks} href='/recipes'>Recipes</a>
                         <br />
-                        <a style={{ textDecoration: 'none' }} href='origin'>Origin</a>
+                        <a style={styles.modalLinks} href='origin'>Origin</a>
                     </Modal.Body>
                 </Modal>
             </span>

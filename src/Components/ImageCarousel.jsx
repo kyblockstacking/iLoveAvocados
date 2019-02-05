@@ -20,7 +20,7 @@ const ImageCarousel = () => {
     };
 
     return (
-        <Carousel controls={false} pauseOnHover={false} slide={true} interval={2500}>
+        <Carousel className='carousel' controls={false} pauseOnHover={false} slide={true} interval={2500}>
 
             <Carousel.Item>
                 <Image responsive style={styles.image} alt="avocado picture" src={avocado1} />

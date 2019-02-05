@@ -17,7 +17,7 @@ const InbetweenText = (props) => {
     };
 
     return (
-        <div style={styles.inbetweenText}>
+        <div className='inbetweenText' style={styles.inbetweenText}>
             {children}
         </div>
     );

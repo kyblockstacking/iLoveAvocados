@@ -12,7 +12,7 @@ const FlavorImages = () => {
     };
 
     return (
-        <div style={{ textAlign: 'center' }}>
+        <div className='flavorImages' style={{ textAlign: 'center' }}>
 
             <CreateImage thumbnail={true} style={styles.createImage} rounded src={require('../avocado_images/avocado_flavor1.jpg')}></CreateImage>
 
