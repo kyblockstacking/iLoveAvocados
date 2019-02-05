@@ -25,7 +25,9 @@ class MenuModal extends Component {
 
         const styles = {
             modalOpen: {
-                cursor: 'help', color: '#618acc'
+                cursor: 'help',
+                color: '#618acc',
+                fontSize: '1.5em'
             },
             modalBody: {
                 textAlign: 'center'
