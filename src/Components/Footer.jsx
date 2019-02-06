@@ -6,7 +6,7 @@ class Footer extends Component {
         footer: {
             display: 'flex',
             flexDirection: 'column',
-            height: '2.5vh',
+            height: '4vh',
             opacity: '0.6',
             position: 'fixed',
             bottom: '0',
@@ -31,7 +31,7 @@ class Footer extends Component {
             footer: {
                 display: 'flex',
                 flexDirection: 'column',
-                height: '2.5vh',
+                height: '4vh',
                 opacity: '0.6',
                 position: 'fixed',
                 bottom: '0',
@@ -69,7 +69,8 @@ class Footer extends Component {
                 color: 'black'
             },
             footerText: {
-                color: 'white'
+                color: 'white',
+                fontSize: '1.4em',
             }
         };
         //opens or closes the footer for mobile users
@@ -80,7 +81,7 @@ class Footer extends Component {
                     footer: styles.footer,
                     showFooter: false,
                     visible: styles.hidden,
-                    footerText: 'EXPAND FOR MORE INFORMATION',
+                    footerText: 'CLICK TO EXPAND FOR MORE INFORMATION',
                     footerArrows: <i className='fas fa-arrow-up' />
                 })
             }
@@ -89,7 +90,7 @@ class Footer extends Component {
                     footer: styles.footerOpen,
                     showFooter: true,
                     visible: styles.show,
-                    footerText: 'MINIMIZE',
+                    footerText: 'CLICK TO MINIMIZE INFORMATION',
                     footerArrows: <i className='fas fa-arrow-down' />
                 })
             }
@@ -196,7 +197,7 @@ class Footer extends Component {
                 </div>
 
                 <i className='fas fa-copyright' style={styles.footerText}>
-                    2019 | ILoveAvocados by Kevin Yang
+                    &nbsp;2019&nbsp;|&nbsp;ILoveAvocados&nbsp;by&nbsp;Kevin&nbsp;Yang
                 </i>
 
             </div >
