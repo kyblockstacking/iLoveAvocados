@@ -13,7 +13,7 @@ class Button extends Component {
                 display: 'block',
                 margin: '0 auto',
                 textAlign: 'center',
-                border: '2px solid #568203',
+                border: '2px solid #4c6e66',
                 padding: '0.5em',
                 marginBottom: '2vh',
                 borderRadius: '5px',
@@ -21,6 +21,7 @@ class Button extends Component {
                 textDecoration: 'none',
                 backgroundColor: 'white',
                 transition: 'all 0.3s ease 0s',
+                boxShadow: '0px 5px 10px #909090',
                 fontWeight: '900'
             }
         };
@@ -36,7 +37,7 @@ class Button extends Component {
                 display: 'block',
                 margin: '0 auto',
                 textAlign: 'center',
-                border: '2px solid #568203',
+                border: '2px solid #4c6e66',
                 padding: '0.5em',
                 marginBottom: '2vh',
                 borderRadius: '5px',
@@ -44,6 +45,7 @@ class Button extends Component {
                 textDecoration: 'none',
                 backgroundColor: 'white',
                 transition: 'all 0.3s ease 0s',
+                boxShadow: '0px 5px 10px #909090',
                 fontWeight: '900'
             },
             buttonHover: {
@@ -51,7 +53,7 @@ class Button extends Component {
                 display: 'block',
                 margin: '0 auto',
                 textAlign: 'center',
-                border: '2px solid #568203',
+                border: '2px solid #4c6e66',
                 padding: '0.5em',
                 marginBottom: '2vh',
                 borderRadius: '5px',
