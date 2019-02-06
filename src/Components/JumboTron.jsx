@@ -17,14 +17,14 @@ const JumboTron = () => {
             fontSize: '8em',
             paddingTop: '25vh',
             color: '#568203',
-            webkitTextStroke: '2px',
-            webkitTextStrokeColor: '#424242'
+            WebkitTextStroke: '2px',
+            WebkitTextStrokeColor: '#424242'
         },
         slogan: {
             fontFamily: 'Archivo',
             color: '#568203',
-            webkitTextStroke: '1px',
-            webkitTextStrokeColor: '#424242',
+            WebkitTextStroke: '1px',
+            WebkitTextStrokeColor: '#424242',
             fontSize: '2em'
         }
     };

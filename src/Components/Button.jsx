@@ -77,6 +77,7 @@ class Button extends Component {
                 style={this.state.buttonStyle}>
                 <Tooltip
                     className='tooltip'
+                    id={'button-information'}
                     tooltip={tooltip}>
                     {children}
                 </Tooltip>
