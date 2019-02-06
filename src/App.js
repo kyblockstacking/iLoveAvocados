@@ -15,6 +15,7 @@ import TextArea from './Components/TextArea';
 import CreateImage from './Components/CreateImage';
 import FlavorImages from './Components/FlavorImages';
 import Origin from './Components/Origin';
+import Recipes from './Components/Recipes';
 
 class App extends Component {
   render() {
@@ -62,6 +63,7 @@ class App extends Component {
           <Route exact path='/' render={(props) => <CreateImage {...props} circle={true} thumbnail={true} src={require('./avocado_images/avocado_plant.jpg')} style={{ display: 'block', margin: '0 auto' }} />} />
 
           <Route exact path='/origin' component={Origin} />
+          <Route exact path='/recipes' component={Recipes} />
 
         </div>
 

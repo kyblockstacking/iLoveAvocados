@@ -6,7 +6,7 @@ import MenuModal from './MenuModal';
 
 const NavBar = () => {
     return (
-        <Navbar fixedTop text-center>
+        <Navbar fixedTop>
             <Navbar.Header style={{ marginLeft: '24vw' }}>
                 <Navbar.Brand>
                     <div href='/' style={{ fontFamily: 'Poppins' }}>
