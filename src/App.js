@@ -16,6 +16,7 @@ import CreateImage from './Components/CreateImage';
 import FlavorImages from './Components/FlavorImages';
 import Origin from './Components/Origin';
 import Recipes from './Components/Recipes';
+import Footer from './Components/Footer';
 
 class App extends Component {
   render() {
@@ -60,10 +61,12 @@ class App extends Component {
           <Route exact path='/' component={FlavorImages} />
           <Route exact path='/' render={(props) => <InbetweenText {...props} children={<span>LEARN THEIR ORIGIN</span>} />} />
           <Route exact path='/' render={(props) => <Button {...props} href='/origin' children={<span>ORIGIN</span>} tooltip={<span>Click me learn about the origin of the avocado!</span>} />} />
-          <Route exact path='/' render={(props) => <CreateImage {...props} circle={true} thumbnail={true} src={require('./avocado_images/avocado_plant.jpg')} style={{ display: 'block', margin: '0 auto' }} />} />
+          <Route exact path='/' render={(props) => <CreateImage {...props} circle={true} thumbnail={true} src={require('./avocado_images/avocado_plant.jpg')} style={{ display: 'block', margin: '0 auto 6em auto' }} />} />
 
           <Route exact path='/origin' component={Origin} />
           <Route exact path='/recipes' component={Recipes} />
+
+          <Route path='/' component={Footer} />
 
         </div>
 
