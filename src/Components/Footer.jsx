@@ -59,7 +59,7 @@ class Footer extends Component {
             show: {
                 visibility: 'visible',
                 opacity: '1',
-                fontSize: '2em',
+                fontSize: '1.2em',
                 width: '100%'
             },
             hidden: {
@@ -120,7 +120,7 @@ class Footer extends Component {
 
                 </div>
 
-                <br /><br />
+                <br />
 
                 <div
                     className='footerLinks'
