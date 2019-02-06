@@ -79,7 +79,7 @@ class Button extends Component {
                     className='tooltip'
                     id={'button-information'}
                     tooltip={tooltip}>
-                    {children}
+                    {children} <i class='fas fa-arrow-right' />
                 </Tooltip>
             </a>
         );
