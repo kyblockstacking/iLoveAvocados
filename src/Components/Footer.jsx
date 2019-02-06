@@ -6,8 +6,8 @@ class Footer extends Component {
         footer: {
             display: 'flex',
             flexDirection: 'column',
-            height: '3vh',
-            opacity: '0.5',
+            height: '2.5vh',
+            opacity: '0.6',
             position: 'fixed',
             bottom: '0',
             width: '100%',
@@ -20,8 +20,9 @@ class Footer extends Component {
         visible: {
             visibility: 'hidden'
         },
-        showFooter: false
-
+        showFooter: false,
+        footerText: 'EXPAND FOR MORE INFORMATION',
+        footerArrows: <i className='fas fa-arrow-up' />
     }
 
     render() {
@@ -30,8 +31,8 @@ class Footer extends Component {
             footer: {
                 display: 'flex',
                 flexDirection: 'column',
-                height: '3vh',
-                opacity: '0.5',
+                height: '2.5vh',
+                opacity: '0.6',
                 position: 'fixed',
                 bottom: '0',
                 width: '100%',
@@ -53,7 +54,7 @@ class Footer extends Component {
                 textAlign: 'center',
                 transition: 'all 0.3s ease 0s',
                 background: '#4c6e66',
-                color: 'white'
+                color: 'black',
             },
             show: {
                 visibility: 'visible',
@@ -65,6 +66,9 @@ class Footer extends Component {
                 visibility: 'hidden'
             },
             footerLinks: {
+                color: 'black'
+            },
+            footerText: {
                 color: 'white'
             }
         };
@@ -72,10 +76,22 @@ class Footer extends Component {
         //attached to onClick
         this.handleFooter = () => {
             if (this.state.showFooter === true) {
-                this.setState({ footer: styles.footer, showFooter: false })
+                this.setState({
+                    footer: styles.footer,
+                    showFooter: false,
+                    visible: styles.hidden,
+                    footerText: 'EXPAND FOR MORE INFORMATION',
+                    footerArrows: <i className='fas fa-arrow-up' />
+                })
             }
             else if (this.state.showFooter === false) {
-                this.setState({ footer: styles.footerOpen, showFooter: true })
+                this.setState({
+                    footer: styles.footerOpen,
+                    showFooter: true,
+                    visible: styles.show,
+                    footerText: 'LESS INFORMATION',
+                    footerArrows: <i className='fas fa-arrow-down' />
+                })
             }
         };
 
@@ -84,47 +100,105 @@ class Footer extends Component {
                 className='footer'
                 style={this.state.footer}
                 //onMouseEnter for web users
-                onMouseEnter={() => this.setState({ footer: styles.footerOpen, visible: styles.show, showFooter: true })}
-                onMouseLeave={() => this.setState({ footer: styles.footer, visible: styles.hidden, showFooter: false })}
+                onMouseEnter={() => this.setState({ footer: styles.footerOpen, visible: styles.show, showFooter: true, footerText: 'LESS INFORMATION', footerArrows: <i className='fas fa-arrow-down' /> })}
+                onMouseLeave={() => this.setState({ footer: styles.footer, visible: styles.hidden, showFooter: false, footerText: 'EXPAND FOR MORE INFORMATION', footerArrows: <i className='fas fa-arrow-up' /> })}
             >
-                <span
+                <div
                     className='moreInformation'
                     //onClick for mobile users
                     onClick={this.handleFooter}
                 >
-                    <i
-                        className='fas fa-arrow-up'
-                    />
-                    &nbsp;EXPAND FOR MORE INFORMATION&nbsp;
-                    <i
-                        className='fas fa-arrow-up'
-                    />
-                </span>
 
-                <br />
-                <div style={this.state.visible}>
-                    <i className='fab fa-github-alt' />
-                    &nbsp;
-                    <a style={styles.footerLinks} href='https://github.com/kyblockstacking/ILoveAvocados/'>
-                        ILoveAvocados's Repository
-                    </a>
-                </div>
-                <div style={this.state.visible}>
-                    <i className='fab fa-github-square' />
-                    &nbsp;
-                    <a style={styles.footerLinks} href='https://github.com/kyblockstacking/'>
-                        GitHub
-                    </a>
-                </div>
-                <div style={this.state.visible}>
-                    <i className='fab fa-linkedin' />
-                    &nbsp;
-                    <a style={styles.footerLinks} href='https://www.linkedin.com/in/kevinyang92/'>
-                        LinkedIn
-                    </a>
+                    <span style={styles.footerText} className='footerText'>
+                        {this.state.footerArrows}
+                        &nbsp;
+                        {this.state.footerText}
+                        &nbsp;
+                        {this.state.footerArrows}
+                    </span>
+
                 </div>
 
-                <i className='fas fa-copyright' style={{ padding: '10vh 0 0 0' }}> 2019 | ILoveAvocados by Kevin Yang </i>
+                <br /><br />
+
+                <div
+                    className='footerLinks'
+                    style={{ height: '100%' }}
+                >
+                    {/* repo link */}
+                    <div
+                        className='repo'
+                        style={this.state.visible}
+                    >
+                        <i className='fab fa-github-alt' />
+                        &nbsp;
+                    <a
+                            style={styles.footerLinks}
+                            href='https://github.com/kyblockstacking/ILoveAvocados/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            ILoveAvocados's Repository
+                    </a>
+                    </div>
+
+                    {/* github link */}
+                    <div
+                        className='github'
+                        style={this.state.visible}
+                    >
+                        <i className='fab fa-github' />
+                        &nbsp;
+                    <a
+                            style={styles.footerLinks}
+                            href='https://github.com/kyblockstacking/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            GitHub
+                    </a>
+                    </div>
+
+                    {/* linkedin link */}
+                    <div
+                        className='linkedin'
+                        style={this.state.visible}
+                    >
+                        <i className='fab fa-linkedin-in' />
+                        &nbsp;
+                    <a
+                            style={styles.footerLinks}
+                            href='https://www.linkedin.com/in/kevinyang92/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            LinkedIn
+                    </a>
+                    </div>
+
+                    {/* email link */}
+                    <div
+                        className='email'
+                        style={this.state.visible}
+                    >
+                        <i className='fas fa-envelope' />
+                        &nbsp;
+                        <a
+                            style={styles.footerLinks}
+                            href='mailto:kevin1992yang@gmail.com'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            kevin1992yang@gmail.com
+                        </a>
+                    </div>
+
+                </div>
+
+                <i className='fas fa-copyright' style={styles.footerText}>
+                    2019 | ILoveAvocados by Kevin Yang
+                </i>
+
             </div >
         );
     };
