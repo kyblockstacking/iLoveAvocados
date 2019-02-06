@@ -42,8 +42,8 @@ class Footer extends Component {
             footerOpen: {
                 display: 'flex',
                 flexDirection: 'column',
-                height: '10vh',
-                opacity: '0.5',
+                height: '30vh',
+                opacity: '0.8',
                 position: 'fixed',
                 bottom: '0',
                 width: '100%',
@@ -53,13 +53,20 @@ class Footer extends Component {
                 background: '#98FB98'
             },
             show: {
-                visibility: 'visible'
+                visibility: 'visible',
+                opacity: '1',
+                fontSize: '2em',
+                width: '100%'
             },
             hidden: {
                 visibility: 'hidden'
+            },
+            footerLinks: {
+                textDecoration: 'none'
             }
         };
-
+        //opens or closes the footer for mobile users
+        //attached to onClick
         this.handleFooter = () => {
             if (this.state.showFooter === true) {
                 this.setState({ footer: styles.footer, showFooter: false })
@@ -91,10 +98,30 @@ class Footer extends Component {
                     />
                 </span>
 
+                <br />
+                <div style={this.state.visible}>
+                    <i className='fab fa-github-alt' />
+                    &nbsp;
+                    <a style={styles.footerLinks} href='https://github.com/kyblockstacking/ILoveAvocados/'>
+                        ILoveAvocados's Repository
+                    </a>
+                </div>
+                <div style={this.state.visible}>
+                    <i className='fab fa-github-square' />
+                    &nbsp;
+                    <a style={styles.footerLinks} href='https://github.com/kyblockstacking/'>
+                        GitHub
+                    </a>
+                </div>
+                <div style={this.state.visible}>
+                    <i className='fab fa-linkedin' />
+                    &nbsp;
+                    <a style={styles.footerLinks} href='https://www.linkedin.com/in/kevinyang92/'>
+                        LinkedIn
+                    </a>
+                </div>
 
-                <div style={this.state.visible}>GITHUB</div>
-                <div style={this.state.visible}>LINKEDIN</div>
-                <div style={this.state.visible}>FACEBOOK</div>
+                <i className='fas fa-copyright' style={{ padding: '10vh 0 0 0' }}> 2019 | ILoveAvocados by Kevin Yang </i>
             </div >
         );
     };
