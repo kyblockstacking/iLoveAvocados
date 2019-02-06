@@ -197,7 +197,7 @@ class Footer extends Component {
                 </div>
 
                 <i className='fas fa-copyright' style={styles.footerText}>
-                    <span style={{ width: '100%' }}>&nbsp;2019&nbsp;ILoveAvocados&nbsp;by&nbsp;Kevin&nbsp;Yang</span>
+                    <span style={{ width: '100vw' }}>&nbsp;2019&nbsp;ILoveAvocados&nbsp;by&nbsp;Kevin&nbsp;Yang</span>
                 </i>
 
             </div >
