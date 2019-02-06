@@ -14,7 +14,8 @@ class Footer extends Component {
             flexShrink: '0',
             textAlign: 'center',
             transition: 'all 0.3s ease 0s',
-            background: '#98FB98'
+            background: '#4c6e66',
+            color: 'white'
         },
         visible: {
             visibility: 'hidden'
@@ -37,7 +38,8 @@ class Footer extends Component {
                 flexShrink: '0',
                 textAlign: 'center',
                 transition: 'all 0.3s ease 0s',
-                background: '#98FB98'
+                background: '#4c6e66',
+                color: 'white'
             },
             footerOpen: {
                 display: 'flex',
@@ -50,7 +52,8 @@ class Footer extends Component {
                 flexShrink: '0',
                 textAlign: 'center',
                 transition: 'all 0.3s ease 0s',
-                background: '#98FB98'
+                background: '#4c6e66',
+                color: 'white'
             },
             show: {
                 visibility: 'visible',
@@ -62,7 +65,7 @@ class Footer extends Component {
                 visibility: 'hidden'
             },
             footerLinks: {
-                textDecoration: 'none'
+                color: 'white'
             }
         };
         //opens or closes the footer for mobile users
