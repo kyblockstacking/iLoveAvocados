@@ -23,19 +23,6 @@ const NavBar = () => {
     };
 
     return (
-<<<<<<< HEAD
-        <Navbar fixedTop>
-            <Navbar.Header style={{ marginLeft: '24vw' }}>
-                <Navbar.Brand>
-                    <div href='/' style={{ fontFamily: 'Poppins' }}>
-                        <a href='/' style={{ color: 'olive', textDecoration: 'none', margin: '0' }}>
-                            Avocado.California
-                            </a>
-                        &nbsp;
-                        <MenuModal />
-                    </div>
-                </Navbar.Brand>
-=======
         <Navbar
             className='navbar'
             fixedTop
@@ -53,7 +40,6 @@ const NavBar = () => {
                 </a>
                 &nbsp;
                 <MenuModal />
->>>>>>> a535f9576951b13318de1757daa59492b50e18b0
             </Navbar.Header >
         </Navbar>
 
