@@ -89,7 +89,7 @@ class Footer extends Component {
                     footer: styles.footerOpen,
                     showFooter: true,
                     visible: styles.show,
-                    footerText: 'LESS INFORMATION',
+                    footerText: 'MINIMIZE',
                     footerArrows: <i className='fas fa-arrow-down' />
                 })
             }
@@ -100,7 +100,7 @@ class Footer extends Component {
                 className='footer'
                 style={this.state.footer}
                 //onMouseEnter for web users
-                onMouseEnter={() => this.setState({ footer: styles.footerOpen, visible: styles.show, showFooter: true, footerText: 'LESS INFORMATION', footerArrows: <i className='fas fa-arrow-down' /> })}
+                onMouseEnter={() => this.setState({ footer: styles.footerOpen, visible: styles.show, showFooter: true, footerText: 'MINIMIZE', footerArrows: <i className='fas fa-arrow-down' /> })}
                 onMouseLeave={() => this.setState({ footer: styles.footer, visible: styles.hidden, showFooter: false, footerText: 'EXPAND FOR MORE INFORMATION', footerArrows: <i className='fas fa-arrow-up' /> })}
             >
                 <div
