@@ -1,8 +1,6 @@
 import React from 'react';
 
-const InbetweenText = (props) => {
-
-    const { children } = props;
+const InbetweenText = ({ children }) => {
 
     const styles = {
         inbetweenText: {

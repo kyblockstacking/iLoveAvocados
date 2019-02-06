@@ -1,9 +1,7 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 
-const CreateImage = (props) => {
-
-    const { circle, thumbnail, src, style } = props
+const CreateImage = ({ circle, thumbnail, src, style }) => {
 
     return (
         <Image

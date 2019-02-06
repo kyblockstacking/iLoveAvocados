@@ -1,8 +1,6 @@
 import React from 'react';
 
-const TextArea = (props) => {
-
-    const { children } = props;
+const TextArea = ({ children }) => {
 
     const styles = {
         textArea: {

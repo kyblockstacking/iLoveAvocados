@@ -15,6 +15,7 @@ class Button extends Component {
     render() {
 
         const { href, tooltip, children } = this.props;
+
         const styles = {
             button: {
                 fontFamily: 'Archivo',

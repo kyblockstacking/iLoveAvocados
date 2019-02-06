@@ -5,19 +5,19 @@ class MenuModal extends Component {
     constructor(props, context) {
         super(props, context);
 
-        this.handleShow = this.handleShow.bind(this);
-        this.handleClose = this.handleClose.bind(this);
+        this.OpenModal = this.OpenModal.bind(this);
+        this.CloseModal = this.CloseModal.bind(this);
 
         this.state = {
             show: false
         };
     }
 
-    handleClose() {
+    CloseModal() {
         this.setState({ show: false });
     };
 
-    handleShow() {
+    OpenModal() {
         this.setState({ show: true });
     };
 
@@ -40,7 +40,7 @@ class MenuModal extends Component {
         return (
             <span>
                 <i
-                    onClick={this.handleShow}
+                    onClick={this.OpenModal}
                     className='fas fa-list modalOpen'
                     style={styles.modalOpen}
                 />
@@ -48,7 +48,7 @@ class MenuModal extends Component {
                 <Modal
                     className='modal'
                     show={this.state.show}
-                    onHide={this.handleClose}
+                    onHide={this.CloseModal}
                 >
                     <Modal.Header
                         className='modalHeader'
