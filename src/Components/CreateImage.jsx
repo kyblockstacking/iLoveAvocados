@@ -6,7 +6,8 @@ const CreateImage = ({ circle, thumbnail, src, style }) => {
     return (
         <Image
             className='createImage'
-            responsive circle={circle}
+            responsive 
+            circle={circle}
             thumbnail={thumbnail}
             src={src}
             style={style}>
