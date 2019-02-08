@@ -7,25 +7,24 @@ class Recipes extends Component {
 
 
     state = {
-        images: []
+        edamamData: []
     };
 
     componentDidMount() {
-        const APPKEY = process.env.REACT_APP_APPKEY
-        const APPID = process.env.REACT_APP_APPID
-
+        const APPKEY = process.env.REACT_APP_APPKEY;
+        const APPID = process.env.REACT_APP_APPID;
         const random = Math.floor(Math.random() * 90);
 
         axios.get(`https://api.edamam.com/search?app_id=${APPID}&app_key=${APPKEY}&q=avocado&from=${random}`)
             .then((response) => {
-                const images = response.data.hits
-                this.setState({ images })
+                const edamamData = response.data.hits;
+                this.setState({ edamamData })
                 console.log(response.data)
             })
             .catch((error) => {
                 console.log(error);
             }).then(() => {
-                console.log(this.state.images)
+                console.log(this.state.edamamData)
             })
     };
 
@@ -33,7 +32,7 @@ class Recipes extends Component {
 
         return (
             <div style={{ margin: '15vh 0 0 0', textAlign: 'center' }}>
-                {this.state.images.map(item => {
+                {this.state.edamamData.map(item => {
                     return (
                         <div style={{ display: 'inline-block' }}>
                             <div style={{ fontSize: '0.8em', padding: '1em 0 0 0' }}>{item.recipe.label}</div>
