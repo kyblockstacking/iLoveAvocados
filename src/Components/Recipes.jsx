@@ -35,10 +35,14 @@ class Recipes extends Component {
         return (
             <div style={{ margin: '15vh 0 0 0', textAlign: 'center' }}>
 
+
+                <div onClick={() => this.FetchRecipes()}>More Recipes!</div>
+
                 {this.state.edamamData.map(item => {
                     return (
                         <div key={item.recipe.label} style={{ display: 'inline-block' }}>
                             <div style={{ fontSize: '0.8em', padding: '1em 0 0 0' }}>{item.recipe.label}</div>
+                            <div><a href={item.recipe.url} target='_blank' rel='noopener noreferrer'>View Recipe&nbsp;</a><i className='fas fa-arrow-right' /></div>
                             <CreateImage thumbnail={true} rounded src={item.recipe.image} style={{ padding: '10px 10px 10px 10px', margin: '0 0 1vh 1vw' }} />
                         </div>
                     );
