@@ -19,12 +19,9 @@ class Recipes extends Component {
             .then((response) => {
                 const edamamData = response.data.hits;
                 this.setState({ edamamData })
-                console.log(response.data)
             })
             .catch((error) => {
                 console.log(error);
-            }).then(() => {
-                console.log(this.state.edamamData)
             })
     };
 
