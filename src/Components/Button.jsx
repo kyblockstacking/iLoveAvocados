@@ -22,14 +22,15 @@ class Button extends Component {
                 backgroundColor: 'white',
                 transition: 'all 0.3s ease 0s',
                 boxShadow: '0px 5px 10px #909090',
-                fontWeight: '900'
+                fontWeight: '900',
+                cursor: 'pointer'
             }
         };
     };
 
     render() {
 
-        const { href, tooltip, children } = this.props;
+        const { href, tooltip, children, onClick } = this.props;
 
         const styles = {
             button: {
@@ -46,7 +47,8 @@ class Button extends Component {
                 backgroundColor: 'white',
                 transition: 'all 0.3s ease 0s',
                 boxShadow: '0px 5px 10px #909090',
-                fontWeight: '900'
+                fontWeight: '900',
+                cursor: 'pointer'
             },
             buttonHover: {
                 fontFamily: 'Archivo',
@@ -64,7 +66,8 @@ class Button extends Component {
                 transform: 'translateY(-5px)',
                 backgroundColor: '#4c6e66',
                 transition: 'all 0.3s ease 0s',
-                fontWeight: '900'
+                fontWeight: '900',
+                cursor: 'pointer'
             }
         };
 
@@ -72,6 +75,7 @@ class Button extends Component {
             <a
                 className='button'
                 href={href}
+                onClick={onClick}
                 onMouseEnter={() => { this.setState({ buttonStyle: styles.buttonHover }) }}
                 onMouseLeave={() => { this.setState({ buttonStyle: styles.button }) }}
                 style={this.state.buttonStyle}>
