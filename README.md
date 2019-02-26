@@ -1,4 +1,5 @@
-<h1>iLoveAvocados</h1>
+#[iLoveAvocados](http://iloveavocados.s3-website-us-west-1.amazonaws.com/)
+
 currently deployed on AWS S3: http://iloveavocados.s3-website-us-west-1.amazonaws.com/
 
 
