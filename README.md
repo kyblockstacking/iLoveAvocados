@@ -1,7 +1,5 @@
 # [iLoveAvocados](http://iloveavocados.s3-website-us-west-1.amazonaws.com/)
 
-<h3>initial built to familiarize myself with react-bootstrap</h3>
-
 React-Bootstrap references:
 
 https://github.com/react-bootstrap/react-bootstrap
